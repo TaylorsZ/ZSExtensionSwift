@@ -16,7 +16,7 @@ extension UIButton {
     /// - Parameters:
     ///   - color: 背景颜色
     ///   - state: 状态
-    func setBackgroundColor(color:UIColor , state:UIControl.State) {
+    public func setBackgroundColor(color:UIColor , state:UIControl.State) {
         if let image = image(color) {
             self.setBackgroundImage(image, for: state)
         }

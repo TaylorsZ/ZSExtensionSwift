@@ -63,7 +63,7 @@ extension UIColor {
     ///   - value: 数值（0~255）
     ///   - alpha: 透明度
     /// - Returns: 颜色
-    static func sameRGB(value: CGFloat,alpha:CGFloat? = nil) -> UIColor {
+    public static func sameRGB(value: CGFloat,alpha:CGFloat? = nil) -> UIColor {
         let rgb = value/255.0
         return UIColor(red: rgb, green: rgb, blue: rgb, alpha: alpha ?? 1)
     }
@@ -71,7 +71,7 @@ extension UIColor {
     /// - Parameters:
     ///   - hexColor: 颜色
     ///   - alpha: 透明度
-    convenience init(hexColor: String,alpha:CGFloat? = nil) {
+    public convenience init(hexColor: String,alpha:CGFloat? = nil) {
         let hexString = hexColor.trimmingCharacters(in: .whitespacesAndNewlines)
         let scanner = Scanner(string: hexString)
         
